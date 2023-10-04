@@ -6,10 +6,10 @@ const state = {
     score: document.querySelector("#score"),
   },
   values: {
-    gameVelocity: 1000,
+    gameVelocity: 500,
     hitPosition: 0,
     result: 0,
-    curretTime: 10,
+    curretTime: 20,
   },
   actions: {
     timerId: setInterval(randomSquare, 1000),
@@ -30,7 +30,7 @@ function countDown() {
 
 function playSound(audioName) {
   let audio = new Audio(`./src/audios/${audioName}.m4a`);
-  audio.volume = 0.5;
+  audio.volume = 0.8;
   audio.play();
 }
 

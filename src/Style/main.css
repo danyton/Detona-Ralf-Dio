@@ -10,12 +10,19 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  
+    font-family: 'Press Start 2P', cursive;
     height: 90px;
     width: 100%;
     background-color: #000000;
     color: #ffffff;
     border-bottom: 5px solid #ffd700;
+  }
+
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
   }
   
   .panel {
@@ -30,11 +37,26 @@
     width: 150px;
     border: 1px solid #000000;
     background-color: #f5f5dc;
+    background-image: url("../Imagens/imagen2s.png");
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
+    background-position: center center; /* Centraliza a imagem vertical e horizontalmente */
   }
   
   .enemy {
     background-image: url("../Imagens/Ralph\ 2.png");
     background-size: cover;
+  }
+
+  footer {
+    position: absolute; /* Posicionamento absoluto em relação ao corpo */
+    bottom: 0; /* Alinha o rodapé na parte inferior */
+    width: 100%; /* Ocupa toda a largura do corpo */
+    /* background-color: #333; Cor de fundo do rodapé de exemplo */
+    color: #fff; /* Cor do texto do rodapé */
+    padding: 10px; /* Espaçamento interno para melhor legibilidade */
+    text-align: center; /* Alinhamento do texto ao centro */
+    font-family: 'Press Start 2P', cursive;
   }
   
   .menu-lives {
